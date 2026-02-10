@@ -10,6 +10,4 @@ router.get("/receive", (req, res)=>{
 })
 
 
-
-
 export default router;
