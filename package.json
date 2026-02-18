@@ -17,5 +17,8 @@
     "url": "https://github.com/Abdulsalamdev27/chatroom-mern/issues"
   },
   "homepage": "https://github.com/Abdulsalamdev27/chatroom-mern#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "cloudinary": "^2.9.0"
+  }
 }
