@@ -6,9 +6,9 @@ const router = express.Router();
 
 // router.get("/test", arcjetProtection, (req, res) => {
 //     res.status(200).json({message: "test"})
-// });
+// }); 
 
-router.use(arcjetProtection); //anytime the route is call the arcjectproctection will be implemented
+// router.use(arcjetProtection); //anytime the route is call the arcjectproctection will be implemented
 
 router.post("/signup", signUp);
 router.post("/login", login);
