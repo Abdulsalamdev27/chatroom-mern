@@ -1,5 +1,6 @@
 import express from "express";
 import cookiesParser from "cookie-parser";
+import cors from "cors";
 import path from "path";
 
 import { ENV } from "./lib/env.js";
@@ -12,6 +13,7 @@ import { connectDB } from "./lib/db.js";
 
 const app = express();
 app.use(express.json()) //middleware req.bod
+app.use(cors({origin:ENV.CLIENT_URL, credentials:true}));
 app.use(cookiesParser())
 
 const __dirname = path.resolve();
